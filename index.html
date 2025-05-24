@@ -30,17 +30,21 @@
     }
 
     .logo {
-      max-width: 280px;
+      max-width: 320px;
       width: 100%;
       margin-bottom: 20px;
     }
 
     .button-container {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 16px;
       display: flex;
       flex-direction: column;
       gap: 12px;
       width: 100%;
       max-width: 300px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
 
     .button-container a {
@@ -53,15 +57,14 @@
       transition: transform 0.3s ease-in-out;
       transform-origin: center;
       display: inline-block;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
-    
-    .button-container a:nth-child(2) { background-color: #25D366; } /* Cardápio */
-    .button-container a:nth-child(1) { background-color: #FACC15; } /* WhatsApp */
-    .button-container a:nth-child(3) { background-color: #FB923C; } /* Delivery | Retirada */
-    .button-container a:nth-child(4) { background-color: #EF4444; } /* Instagram */
-    .button-container a:nth-child(5) { background-color: #0F766E; } /* TripAdvisor */
-    .button-container a:nth-child(6) { background-color: #3B82F6; } /* Localização */
+    .button-container a:nth-child(1) { background-color: #FACC15; } /* Cardápio */
+    .button-container a:nth-child(2) { background-color: #FB923C; } /* Delivery */
+    .button-container a:nth-child(3) { background-color: #EF4444; } /* Instagram */
+    .button-container a:nth-child(4) { background-color: #0F766E; } /* TripAdvisor */
+    .button-container a:nth-child(5) { background-color: #3B82F6; } /* Localização */
 
     .button-container a:hover {
       transform: rotate(-2deg) scale(1.05);
@@ -74,6 +77,21 @@
         padding: 12px 20px;
       }
     }
+
+    /* WhatsApp flutuante */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      font-size: 24px;
+      padding: 14px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
   </style>
 </head>
 <body>
@@ -81,11 +99,13 @@
 
   <div class="button-container">
     <a href="https://drive.google.com/file/d/1hjSURhHWdE-7OKBbWpvP01T4cRKHj7oU/view">Cardápio</a>
-    <a href="http://wa.me/5522999826331">WhatsApp</a>
     <a href="https://app.jotaja.com/astralbeachfood">Delivery | Retirada</a>
     <a href="https://www.instagram.com/astralbeach.food/">Instagram</a>
     <a href="https://www.tripadvisor.com.br/Restaurant_Review-g1056623-d15137632-Reviews-Astral_Beach_Food-Arraial_do_Cabo_State_of_Rio_de_Janeiro.html">TripAdvisor</a>
     <a href="https://www.google.com/maps/place/Astral+Beach+Food/data=!4m2!3m1!1s0x0:0x71e15ba1233946c7?sa=X&ved=1t:2428&ictx=111">Localização</a>
   </div>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/5522999826331" target="_blank" aria-label="WhatsApp">💬</a>
 </body>
 </html>
