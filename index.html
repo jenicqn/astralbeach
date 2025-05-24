@@ -8,6 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-image: url('A_high-resolution_aerial_photograph_taken_from_a_d.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -63,10 +64,21 @@
       transform: scale(1.05);
       opacity: 0.9;
     }
+
+    /* Responsividade */
+    @media (max-width: 500px) {
+      .slogan {
+        font-size: 16px;
+      }
+
+      .button-container a {
+        font-size: 14px;
+        padding: 12px 20px;
+      }
+    }
   </style>
 </head>
 <body>
-  <body style="background-image: url('A_high-resolution_aerial_photograph_taken_from_a_d.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
   <img src="images.png" alt="Logo Astral Beach" class="logo">
   <p class="slogan">🌊 𝙰𝚕𝚒𝚖𝚎𝚗𝚝𝚘 𝚙𝚊𝚛𝚊 𝚊𝚕𝚖𝚊 𝚜𝚊𝚕𝚐𝚊𝚍𝚊</p>
 
