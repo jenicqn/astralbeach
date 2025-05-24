@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Astral Beach</title>
+
+  <!-- Redireciona www para versão principal -->
   <script>
-  if (window.location.hostname.startsWith("www.")) {
-    const url = window.location.href.replace("www.", "");
-    window.location.replace(url);
-  }
-</script>
+    if (window.location.hostname.startsWith("www.")) {
+      const url = window.location.href.replace("www.", "");
+      window.location.replace(url);
+    }
+  </script>
 
   <style>
     body {
@@ -29,8 +31,9 @@
     }
 
     .logo {
-      max-width: 220px;
-      margin-bottom: 22px;
+      max-width: 280px;
+      width: 100%;
+      margin-bottom: 24px;
     }
 
     .slogan {
@@ -64,17 +67,17 @@
       display: inline-block;
     }
 
-    .button-container a:nth-child(1) { background-color: #ffb347; } /* Laranja claro */
-    .button-container a:nth-child(2) { background-color: #34d399; } /* Verde água */
-    .button-container a:nth-child(3) { background-color: #ff6b6b; } /* Coral */
-    .button-container a:nth-child(4) { background-color: #4f46e5; } /* Azul vibrante */
-    .button-container a:nth-child(4) { background-color: #4f46e5; } /* Azul vibrante */
+    .button-container a:nth-child(1) { background-color: #facc15; } /* Amarelo (Cardápio) */
+    .button-container a:nth-child(2) { background-color: #fb923c; } /* Laranja (Delivery) */
+    .button-container a:nth-child(3) { background-color: #ef4444; } /* Vermelho (Instagram) */
+    .button-container a:nth-child(4) { background-color: #10b981; } /* Verde (TripAdvisor) */
+    .button-container a:nth-child(5) { background-color: #3b82f6; } /* Azul (Localização) */
 
     .button-container a:hover {
       transform: rotate(-2deg) scale(1.05);
+      opacity: 0.95;
     }
 
-    /* Responsividade */
     @media (max-width: 500px) {
       .slogan {
         font-size: 16px;
@@ -93,7 +96,7 @@
 
   <div class="button-container">
     <a href="https://drive.google.com/file/d/1hjSURhHWdE-7OKBbWpvP01T4cRKHj7oU/view">Cardápio</a>
-    <a href="http://wa.me/5522999826331">Delivery| Retirada</a>
+    <a href="http://wa.me/5522999826331">Delivery | Retirada</a>
     <a href="https://www.instagram.com/astralbeach.food/">Instagram</a>
     <a href="https://www.tripadvisor.com.br/Restaurant_Review-g1056623-d15137632-Reviews-Astral_Beach_Food-Arraial_do_Cabo_State_of_Rio_de_Janeiro.html">TripAdvisor</a>
     <a href="https://www.google.com/maps/place/Astral+Beach+Food/data=!4m2!3m1!1s0x0:0x71e15ba1233946c7?sa=X&ved=1t:2428&ictx=111">Localização</a>
